@@ -1,0 +1,234 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About AIRINDEX</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#293042",
+                        "surface-variant": "#323537",
+                        "on-surface": "#e0e3e5",
+                        "on-primary": "#002584",
+                        "tertiary-container": "#444b5e",
+                        "surface-container-highest": "#323537",
+                        "error-container": "#93000a",
+                        "on-primary-fixed": "#001453",
+                        "primary-container": "#1e40af",
+                        "on-error-container": "#ffdad6",
+                        "on-surface-variant": "#c4c5d5",
+                        "on-secondary-container": "#006a70",
+                        "primary": "#b8c4ff",
+                        "inverse-surface": "#e0e3e5",
+                        "on-tertiary-fixed-variant": "#40465a",
+                        "on-secondary": "#00363a",
+                        "tertiary": "#bfc6dd",
+                        "inverse-on-surface": "#2d3133",
+                        "surface": "#101415",
+                        "secondary-fixed-dim": "#00dbe7",
+                        "surface-container-high": "#272a2c",
+                        "outline-variant": "#444653",
+                        "background": "#101415",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#74f5ff",
+                        "on-tertiary-container": "#b5bbd2",
+                        "tertiary-fixed": "#dce2fa",
+                        "on-primary-fixed-variant": "#173bab",
+                        "secondary-container": "#00f1fe",
+                        "outline": "#8e909f",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "on-background": "#e0e3e5",
+                        "on-tertiary-fixed": "#141b2c",
+                        "on-primary-container": "#a8b8ff",
+                        "on-error": "#690005",
+                        "surface-tint": "#b8c4ff",
+                        "inverse-primary": "#3755c3",
+                        "primary-fixed": "#dde1ff",
+                        "tertiary-fixed-dim": "#bfc6dd",
+                        "surface-container-low": "#191c1e",
+                        "surface-container": "#1d2022",
+                        "on-secondary-fixed": "#002022",
+                        "primary-fixed-dim": "#b8c4ff",
+                        "surface-bright": "#363a3b",
+                        "surface-container-lowest": "#0b0f10",
+                        "secondary": "#ddfcff",
+                        "surface-dim": "#101415"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "1rem",
+                        "xl": "3rem",
+                        "margin-desktop": "2.5rem",
+                        "sm": "1rem",
+                        "lg": "2rem",
+                        "gutter": "1.5rem",
+                        "xs": "0.5rem",
+                        "unit": "8px",
+                        "md": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "data-mono": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm-uppercase": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "data-mono": ["14px", { "lineHeight": "1.0", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm-uppercase": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.08em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #050810;
+        }
+        .glass-panel {
+            background-color: rgba(13, 20, 37, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid #1E293B;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+            border-color: #00F2FF;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md dark:bg-surface/80 border-b border-outline-variant/30 flex justify-between items-center px-margin-desktop py-4 transition-all duration-200 ease-in-out">
+<div class="flex items-center gap-8">
+<a class="text-headline-md font-headline-md font-bold tracking-tighter text-on-surface dark:text-on-surface" href="#">AIRINDEX</a>
+<div class="hidden md:flex gap-6">
+<a class="text-label-sm-uppercase font-label-sm-uppercase text-on-surface-variant hover:text-on-surface transition-colors hover:bg-white/5 px-2 py-1 rounded" href="#">Dashboard</a>
+<a class="text-label-sm-uppercase font-label-sm-uppercase text-on-surface-variant hover:text-on-surface transition-colors hover:bg-white/5 px-2 py-1 rounded" href="#">Live Index</a>
+<a class="text-label-sm-uppercase font-label-sm-uppercase text-on-surface-variant hover:text-on-surface transition-colors hover:bg-white/5 px-2 py-1 rounded" href="#">Routes</a>
+<a class="text-label-sm-uppercase font-label-sm-uppercase text-on-surface-variant hover:text-on-surface transition-colors hover:bg-white/5 px-2 py-1 rounded" href="#">CPI Impact</a>
+<a class="text-label-sm-uppercase font-label-sm-uppercase text-on-surface-variant hover:text-on-surface transition-colors hover:bg-white/5 px-2 py-1 rounded" href="#">Methodology</a>
+<a class="text-label-sm-uppercase font-label-sm-uppercase text-primary border-b-2 border-primary pb-1 px-2 py-1" href="#">About</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-label-sm-uppercase font-label-sm-uppercase text-on-surface-variant hover:text-on-surface px-4 py-2 border border-outline-variant/50 rounded hover:bg-white/5 transition-all">Live Index Status</button>
+<button class="text-label-sm-uppercase font-label-sm-uppercase bg-primary-container text-white px-6 py-2 rounded hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] transition-all">Login</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop w-full max-w-7xl mx-auto flex flex-col gap-24">
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1 space-y-6 z-10">
+<h1 class="text-display-lg font-display-lg text-on-surface">Demystifying Aviation Economics.</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+                    AIRINDEX provides real-time, highly granular airfare intelligence. We transform fragmented pricing data into actionable economic indicators for institutional monitoring.
+                </p>
+</div>
+<div class="flex-1 w-full aspect-video glass-panel rounded-lg overflow-hidden relative group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-70 mix-blend-screen group-hover:opacity-100 transition-opacity duration-500" data-alt="A sophisticated digital visualization of global flight routes mapped over a dark, glowing terminal screen. Neon cyan and deep aviation blue lines crisscross indicating high-frequency data streams. The aesthetic is high-tech, precise, and analytical, resembling a futuristic mission control center for economic data. High contrast, sharp details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1WRcpRGXZudsSVZiYFex2Kxe2vFLF-cL0I9OHmRFi-_4_COEl_k-glRIwl2voYOFoDcKbV2x_hBHg5IDycu-C0VGDuD180NyUVFdBGqBFxwAkBsL1NeZbEdjEauaS8_lG4ziQdTTbgVzA5MJrV-Xw7-cZv2fHHXecKxXU_9eGuQirqJuNNIysehkSgzLD1Gsy7O8Pa02Ll4cl4bezJPxJcoOPrIMDCBiiKfhXEb0KJ3mfMepU_vv_">
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+</div>
+</section>
+<!-- Bento Grid: Problem & Solution -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Problem -->
+<div class="md:col-span-5 glass-panel rounded-xl p-8 flex flex-col gap-6 glow-hover transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-error-container/20 flex items-center justify-center border border-error-container/50">
+<span class="material-symbols-outlined text-error text-2xl" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div>
+<h2 class="text-headline-lg font-headline-lg mb-4">The Data Fragmentation Problem</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                        Airfare volatility is a leading indicator of macroeconomic trends, yet traditional CPI models rely on delayed, sampled data. Fragmented carrier pricing architectures obscure true market inflation, leaving policy makers reacting rather than forecasting.
+                    </p>
+</div>
+</div>
+<!-- Solution -->
+<div class="md:col-span-7 glass-panel rounded-xl p-8 flex flex-col gap-6 relative overflow-hidden glow-hover transition-all duration-300">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center border border-primary-container/50">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">insights</span>
+</div>
+<div class="z-10">
+<h2 class="text-headline-lg font-headline-lg mb-4">Real-Time Aggregation Engine</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                        We developed a proprietary normalization engine that ingests millions of pricing nodes daily. By synthesizing GDS data and direct API feeds, AIRINDEX creates a unified, minute-by-minute index of aviation economic health.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="border-l-2 border-secondary-container pl-4">
+<span class="text-label-sm-uppercase font-label-sm-uppercase text-secondary-container block mb-1">Latency</span>
+<span class="text-headline-md font-headline-md font-mono">&lt; 50ms</span>
+</div>
+<div class="border-l-2 border-primary-container pl-4">
+<span class="text-label-sm-uppercase font-label-sm-uppercase text-primary block mb-1">Data Points/Day</span>
+<span class="text-headline-md font-headline-md font-mono">14.2M+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technology & Impact -->
+<section class="flex flex-col md:flex-row gap-12 items-center border-t border-outline-variant/20 pt-16">
+<div class="flex-1 w-full aspect-square md:aspect-[3/4] glass-panel rounded-xl overflow-hidden relative">
+<div class="absolute inset-0 bg-secondary-fixed/5"></div>
+<img class="w-full h-full object-cover mix-blend-screen opacity-60" data-alt="A highly abstract representation of a complex neural network or data processing algorithm. Glowing nodes connected by thin, sharp lines over a pitch-black background. Accent colors are striking cyan and deep aviation blue. The image conveys speed, advanced technology, and rigorous analytical processing suitable for a financial tech platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCadtsQ_hKDTrsMahsu9Xyc-7e1fpP3IjslGekj0d2qMsQzxmAOx4YRUn77xHqaSinICk2-mmbEmXL_-hbKIQkvyJaVRnSvzD4JtsbDCc-PDH1MGzIdzTh_A0PxMtdaQxIDJi6HNcZTThzugNcgyxw5zWQZAglagloc9GgcB-fU50eG2CGbYUnndHQO9au6MhnNYvoykN_8a3ZvM3ckcdZ9zckSTUYCZvgvfqzS7JLBd9LVYZ677geP">
+<div class="absolute bottom-6 left-6 right-6 p-4 glass-panel rounded-lg border-secondary-container/30">
+<span class="text-label-sm-uppercase font-label-sm-uppercase text-secondary-container block mb-2">Core Tech Stack</span>
+<p class="text-data-mono font-data-mono text-on-surface-variant">Distributed edge nodes • Proprietary NLP pricing parsers • High-frequency normalization clusters</p>
+</div>
+</div>
+<div class="flex-1 space-y-8">
+<div>
+<h3 class="text-label-sm-uppercase font-label-sm-uppercase text-primary mb-2 tracking-widest">Macro Impact</h3>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Precision for Policy Makers</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-4">
+                        Central banks and economic strategists require absolute clarity. Our indices isolate fuel surcharges, tax fluctuations, and base fare volatility, providing a sterilized view of transport inflation essential for setting monetary policy.
+                    </p>
+</div>
+<div>
+<h3 class="text-label-sm-uppercase font-label-sm-uppercase text-secondary-container mb-2 tracking-widest">Future Scope</h3>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Predictive Trajectories</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-4">
+                        Beyond retrospective analysis, the next iteration of AIRINDEX incorporates machine learning models to forecast route-specific pricing shifts up to 90 days out, expanding our coverage to secondary APAC markets.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest py-12 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center px-margin-desktop w-full max-w-7xl mx-auto">
+<div class="text-label-sm-uppercase font-label-sm-uppercase font-black text-on-surface mb-4 md:mb-0">
+            AIRINDEX
+        </div>
+<div class="flex flex-wrap gap-6 justify-center text-label-sm-uppercase font-label-sm-uppercase text-on-surface-variant">
+<a class="hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+
+
+</div>
+<div class="text-body-md font-body-md text-on-surface-variant mt-4 md:mt-0 text-center md:text-right text-sm">
+            © 2024 AIRINDEX Economic Intelligence Platform. Aviation-themed economic data for policy makers.
+        </div>
+</footer>
+
+
+</body></html>
